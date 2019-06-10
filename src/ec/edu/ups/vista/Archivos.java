@@ -55,9 +55,9 @@ public class Archivos extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         lstOculto = new javax.swing.JList<>();
         jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblRuta = new javax.swing.JLabel();
+        lblModificacion = new javax.swing.JLabel();
+        lblTamaño = new javax.swing.JLabel();
         txtRutaAbsoluta = new javax.swing.JTextField();
         txtUltimaModificacion = new javax.swing.JTextField();
         txtTamaño = new javax.swing.JTextField();
@@ -165,23 +165,21 @@ public class Archivos extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(149, 149, 149)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(68, 68, 68))))
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(149, 149, 149)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,14 +199,14 @@ public class Archivos extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informacion", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 2, 18))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jLabel4.setText("Ruta Absoluta:");
+        lblRuta.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblRuta.setText("Ruta Absoluta:");
 
-        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jLabel5.setText("Ultima modificacion:");
+        lblModificacion.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblModificacion.setText("Ultima modificacion:");
 
-        jLabel6.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jLabel6.setText("Tamaño bytes:");
+        lblTamaño.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblTamaño.setText("Tamaño bytes:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -217,37 +215,32 @@ public class Archivos extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtRutaAbsoluta, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtUltimaModificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblRuta)
+                    .addComponent(lblTamaño)
+                    .addComponent(lblModificacion))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtRutaAbsoluta, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(txtUltimaModificacion)
+                    .addComponent(txtTamaño))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(txtRutaAbsoluta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel5))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRuta)
+                    .addComponent(txtRutaAbsoluta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblModificacion)
                     .addComponent(txtUltimaModificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel6)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                        .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20))))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTamaño)
+                    .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Archivo");
@@ -338,12 +331,14 @@ public class Archivos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarActionPerformed
 
     private void lstDirectorioValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstDirectorioValueChanged
+        
         lstArchivo.clearSelection();
         lstOculto.clearSelection();
         String elementoSeleccionado = lstDirectorio.getSelectedValue();
         String rutaSeleccionada=txtRuta.getText().trim()+"\\"+elementoSeleccionado;
         mostrarInformacionArchivoSeleccionado(rutaSeleccionada);
         txtRutaAbsoluta.setText(rutaSeleccionada);
+       
     }//GEN-LAST:event_lstDirectorioValueChanged
 
     private void lstArchivoValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstArchivoValueChanged
@@ -356,7 +351,7 @@ public class Archivos extends javax.swing.JFrame {
     }//GEN-LAST:event_lstArchivoValueChanged
 
     private void lstOcultoValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstOcultoValueChanged
-        lstArchivo.clearSelection();
+         lstArchivo.clearSelection();
         lstDirectorio.clearSelection();
         String elementoSeleccionado = lstOculto.getSelectedValue();
         String rutaSeleccionada=txtRuta.getText().trim()+"\\"+elementoSeleccionado;
@@ -489,6 +484,9 @@ public class Archivos extends javax.swing.JFrame {
         
         txtUltimaModificacion.setText(fecha);
         txtTamaño.setText(String.valueOf(tamaño)+" KB");
+        
+        //lblModificacion.setText(fecha);
+        //lblTamaño.setText(String.valueOf(tamaño)+" KB");
     }
     /**
      * @param args the command line arguments
@@ -524,6 +522,32 @@ public class Archivos extends javax.swing.JFrame {
             }
         });
     }
+    
+    public String eliminar(String ruta) {
+        if (ruta != null) {
+            eliminar(hayCarpetas(ruta));
+            File folder = new File(ruta);
+            for (File file : folder.listFiles()) {
+                if (file.isFile())
+                    file.delete();
+            }
+            while (hayCarpetas(ruta) != null) 
+                eliminar(hayCarpetas(ruta));
+            folder.delete();
+            return ruta;
+        }
+        return ruta;
+    }
+
+    public String hayCarpetas(String ruta) {
+        File folder = new File(ruta);
+        for (File file : folder.listFiles()) {
+            if (file.isDirectory()) 
+                return file.getPath();
+        }
+        return null;
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
@@ -535,9 +559,6 @@ public class Archivos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -552,6 +573,9 @@ public class Archivos extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JLabel lblModificacion;
+    private javax.swing.JLabel lblRuta;
+    private javax.swing.JLabel lblTamaño;
     private javax.swing.JList<String> lstArchivo;
     private javax.swing.JList<String> lstDirectorio;
     private javax.swing.JList<String> lstOculto;

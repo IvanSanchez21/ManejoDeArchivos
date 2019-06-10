@@ -215,27 +215,23 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="150" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" pref="309" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane3" min="-2" pref="150" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jScrollPane1" min="-2" pref="142" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" pref="309" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane3" min="-2" pref="150" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="90" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
-                          <Component id="jLabel2" min="-2" pref="71" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel3" min="-2" pref="51" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="90" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="71" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel3" min="-2" pref="51" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -370,15 +366,15 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblRuta" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTamaño" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblModificacion" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtTamaño" min="-2" pref="360" max="-2" attributes="0"/>
-                      <Component id="txtRutaAbsoluta" min="-2" pref="360" max="-2" attributes="0"/>
-                      <Component id="txtUltimaModificacion" min="-2" pref="360" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="txtRutaAbsoluta" pref="418" max="32767" attributes="0"/>
+                      <Component id="txtUltimaModificacion" max="32767" attributes="0"/>
+                      <Component id="txtTamaño" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -388,35 +384,27 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtRutaAbsoluta" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="txtUltimaModificacion" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblRuta" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtRutaAbsoluta" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
-                          <Component id="txtTamaño" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblModificacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtUltimaModificacion" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblTamaño" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTamaño" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="22" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="lblRuta">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trebuchet MS" size="14" style="0"/>
@@ -424,7 +412,7 @@
             <Property name="text" type="java.lang.String" value="Ruta Absoluta:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="lblModificacion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trebuchet MS" size="14" style="0"/>
@@ -432,7 +420,7 @@
             <Property name="text" type="java.lang.String" value="Ultima modificacion:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="lblTama&#xf1;o">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trebuchet MS" size="14" style="0"/>
